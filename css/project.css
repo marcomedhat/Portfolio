@@ -1,0 +1,208 @@
+/*GENERAL*/
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Skranji', cursive;
+	font-weight: bold;
+	box-sizing: border-box;
+	background: #f3f3f3;
+}
+
+img {
+	width: 100%;
+}
+
+h2 {
+	margin: 0;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+	background-color: #fff;
+}
+
+/*HEADER SECTION*/
+header {
+	width: 100%;
+}
+
+header #logo {
+	float: left;
+	margin-left: 0;
+	padding: 0.2em 0.5em;
+	height: 50px;
+	width: 50px;
+	font-family: 'Lobster', cursive;
+	font-size: 4em;
+	
+}
+
+header #logo a {
+	color: rgba(218, 99, 21, 0.8);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+header #name {
+	float: right;
+	margin-right: 0;
+	padding: 1em;
+	width: 60%;
+	text-align: right
+}
+
+header #name h1,
+header #name p {
+	color: rgba(81, 81, 82, 0.91);
+}
+
+header #name h1 {
+	font-size: 2.5em;
+	margin: 0;
+}
+
+header #name p {
+	margin-top: 0;
+	color: rgba(218, 99, 21, 0.8);
+}
+
+
+/*HERO SECTION*/
+#hero {
+	width: 100%;
+}
+
+
+/*FEATURED WORK SECTION*/
+#featured-work h2 {
+	padding: 1em;
+	color: rgba(81, 81, 82, 0.91);
+}
+
+#featured-work .projects {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#featured-work .projects .project {
+	flex-basis: 28%;
+	min-width: 200px;
+	text-align: center;
+	border: 3px solid rgba(218, 99, 21, 0.8);
+	background-color: #fff;
+	margin-bottom: 1em;
+	padding: 0.5em;
+}
+
+#featured-work .projects .project .image {
+	max-height: 400px;
+	overflow: hidden;
+}
+
+#featured-work .projects .project h3 {
+	color: rgba(81, 81, 82, 0.91);
+}
+
+
+/*MEDIA QUERRIES*/
+@media screen and (max-width: 800px){
+	.container {
+		width: 99%;
+	}
+
+	body {
+		background: #fff;
+	}
+}
+
+@media screen and (min-width: 450px) and (max-width: 800px){
+	#featured-work .projects .project {
+		flex-basis: 40%;
+	}
+}
+
+@media screen and (min-width: 451px) and (max-width: 493px){
+	header #logo {
+		font-size: 2.5em;
+		padding-top: 0.4em;
+	}
+
+	header #name h1 {
+		font-size: 1.5em;
+		margin: 0;
+	}
+
+	header #name p {
+		font-size: 0.9em;
+	}
+}
+
+@media screen and (min-width: 494px) and (max-width: 612px){
+	header #logo {
+		font-size: 3em;
+		padding-top: 0.4em;
+	}
+
+	header #name h1 {
+		font-size: 2em;
+		margin: 0;
+	}
+
+	header #name p {
+		font-size: 0.9em;
+	}
+}
+
+@media screen and (max-width: 450px){
+	header #logo {
+		font-size: 2.2em;
+		padding: 0.4em 0.2em;
+	}
+
+	header #name {
+		width: 62%;
+		padding-left: 0;
+	}
+
+	header #name h1 {
+		font-size: 1.3em;
+		margin: 0;
+	}
+
+	header #name p {
+		font-size: 0.6em;
+	}
+
+	#featured-work .projects .project {
+		flex-basis: 90%;
+	}
+}
+
+@media screen and (max-width: 316px){
+	header #logo {
+		display:none;
+	}
+
+	header #name {
+		text-align: center;
+		width: 90%;
+	}
+
+	header #name h1 {
+		font-size: 1.6em;
+	}
+
+	header #name p {
+		font-size: 0.7em;
+	}
+
+	#featured-work h2 {
+		text-align: center;
+	}
+
+	
+}
+
+
